@@ -187,12 +187,19 @@ svg{display:block}
 .ldbar{display:flex;align-items:center;gap:10px;margin-bottom:14px}
 .ldbar .srch{width:260px;height:34px;border:1px solid #e6eaf1;border-radius:8px;display:flex;align-items:center;padding:0 12px;color:#98a2b6;font-size:12.5px;background:#fff}
 .seg{display:inline-flex;border:1px solid #e6eaf1;border-radius:8px;overflow:hidden;background:#f8fafc}
-.seg span{padding:7px 14px;font-size:12.5px;font-weight:500;color:#4b5772;border-right:1px solid #e6eaf1}
+.seg span{white-space:nowrap;padding:7px 12px;font-size:12.5px;font-weight:500;color:#4b5772;border-right:1px solid #e6eaf1}
 .seg span:last-child{border-right:none}.seg span.on{background:#fff;color:#0a8c6e;font-weight:600;box-shadow:inset 0 -2px 0 #12b48c}
 .tight .dt td,.tight .dt th{white-space:nowrap;padding:10px 7px;font-size:11.5px}.tight .dt th{font-size:9px;letter-spacing:.04em}.tight .chip{font-size:9px;padding:2px 6px}
 .dt td.num,.dt th.num{text-align:right;font-variant-numeric:tabular-nums}
 .fx{display:inline-block;font-size:9px;font-weight:700;color:#7a4fd6;background:#f1eafe;border-radius:4px;padding:1px 4px;margin-left:5px;letter-spacing:.02em;vertical-align:middle;text-transform:none}
 .neg{color:#e35d6a}
+.hc{display:none}
+.pgr{display:flex;justify-content:flex-end;gap:22px;align-items:center;padding:12px 6px 6px;font-size:12px;color:#7d879c}.pgr b{color:#1f2a44;font-weight:500}
+.idc{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.idc .sec{margin:0}
+.kvg{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px;margin-top:12px}.kvg .k{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#98a2b6;font-weight:600;margin-bottom:5px}.kvg .v{font-size:13.5px;font-weight:600;color:#1f2a44}.kvg .v.mono{font-family:Menlo,monospace;font-weight:400;font-size:11.5px}.kvg .v small{display:block;font-family:Menlo,monospace;font-size:10px;color:#7a4fd6;font-weight:400;margin-top:3px}
+.pbar{height:6px;background:#eef1f6;border-radius:3px;margin:-6px 0 18px;overflow:hidden}.pbar i{display:block;height:100%;background:#12b48c}
+.dl{color:#2e5fd6;font-weight:600;text-decoration:underline}
 .cm{position:absolute;right:40px;top:150px;width:270px;background:#fff;border:1px solid #e6eaf1;border-radius:12px;box-shadow:0 14px 40px rgba(31,42,68,.18);padding:8px;z-index:30}
 .cm div{padding:10px 12px;border-radius:8px;font-size:13px;font-weight:600;color:#1f2a44}
 .cm div small{display:block;font-weight:400;color:#7d879c;font-size:11.5px;margin-top:2px}
@@ -237,7 +244,7 @@ svg{display:block}
 <div class="layout"><div class="side"><div class="it"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7690" stroke-width="2"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>Personal Dashboard</div><div class="it"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7690" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12l3 3 5-6"/></svg>Tasks<span class="chev">⌄</span></div><div class="it on"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#12b48c" stroke-width="2"><path d="M3 21V7l7-4v18M10 21V11l11-3v13"/></svg>Companies<span class="chev">⌃</span></div><div class="sub" style="color:#12b48c;font-weight:600">fourstars</div><div class="sub ">Form</div><div class="sub ">Documents</div><div class="sub ">Messages</div><div class="sub ">Email Logs</div><div class="sub ">Connections</div><div class="sub ">P&amp;L</div><div class="sub on">Loans Performance</div><div class="sub ">Transactions</div><div class="sub ">Exports</div><div class="sub ">FP&amp;A</div><div class="sub ">Products</div><div class="sub ">People</div><div class="sub">Archived <span style="float:right;color:#98a2b6">⌄</span></div><div class="it" style="margin-top:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7690" stroke-width="2"><circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0M17 11a3 3 0 1 0 0-6M22 20a6 6 0 0 0-6-6"/></svg>Users</div><div class="it"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7690" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Reports<span class="chev">⌄</span></div><div class="it"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7690" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12l3 3 5-6"/></svg>Messages<span class="chev">⌄</span></div><div class="it"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7690" stroke-width="2"><path d="M4 5h16v14H4zM4 10h16"/></svg>Definitions<span class="chev">⌄</span></div><div class="grp" style="padding-left:24px;margin-top:8px">Pinned companies</div><div class="it" style="padding-left:24px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7690" stroke-width="2"><path d="M3 21V7l7-4v18M10 21V11l11-3v13"/></svg>fourstars<span class="chev">📌</span></div></div><div class="main"><div class="crumb">company <span>/</span> companies <span>/</span> 32 <span>/</span> products <span>/</span> Funding #3 <span>/</span> <b>loan</b></div><div class="hdr">
     <div class="row">
       <div class="logo"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#12b48c" stroke-width="2"><path d="M3 21V7l7-4v18M10 21V11l11-3v13"/></svg></div>
-      <div><div class="name">fourstars</div><div class="id">ID: 32 <span>·</span> cadcada@enduringplanet.com <span class="chip g">4 products</span><span class="chip b">2 active</span></div></div>
+      <div><div class="name">fourstars</div><div class="id">ID: 32 <span>·</span> hello@fourstars.example <span class="chip g">4 products</span><span class="chip b">2 active</span></div></div>
       <div class="right">
         <div><div class="lbl">Staff access</div><div class="staff"><span>TA</span><span>AK</span><span class="add">+</span></div></div>
         <div><div class="lbl">Daily backfill</div><span class="btn">☐ &nbsp;Run daily backfill job</span></div>
@@ -270,6 +277,7 @@ var t=document.createElement('div');t.className='toast';document.documentElement
 function toast(m){t.textContent=m;t.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){t.classList.remove('on')},2200)}
 var TAB={'Loans':'index.html','Principal payments':'principal.html','Interest payments':'interest.html','Payments ledger':'ledger.html','Columns & formulas':'columns.html'};
 document.addEventListener('click',function(e){
+ var _c=document.getElementById('colmenu');if(_c&&!e.target.closest('#colmenu')&&!(e.target.closest('.btn')&&/Columns/.test(e.target.closest('.btn').textContent)))_c.remove();
  var el=e.target.closest('.vt span,.btn,.cm div,#ovl,.tight .dt tr,.sub,.it,.seg span,.fpill');if(el&&el.closest&&el.closest('tr.nomatch'))return;if(!el)return;
  var x=el.textContent.replace(/\s+/g,' ').trim();
  if(el.id==='ovl')return close();
@@ -277,6 +285,15 @@ document.addEventListener('click',function(e){
  if(el.matches('.seg span,.fpill'))return window.protoFilter(el);
  if(el.matches('.cm div')){if(/^New loan/.test(x))return open('d-loan',1);if(/^Record a payment/.test(x))return open('d-pay',1);if(/^Add a column/.test(x)){if($('d-col')&&location.pathname.indexOf('columns')>-1)return open('d-col',1);return location.href='columns.html#add'}close();return toast('Import from spreadsheet: not part of this prototype')}
  if(el.matches('.btn')){
+  if(/Columns ·/.test(x)){var cm=document.getElementById('colmenu');if(cm){cm.remove();return}
+   var tb=document.getElementById('loans');if(!tb)return;cm=document.createElement('div');cm.id='colmenu';var rc=el.getBoundingClientRect(),z=parseFloat(document.body.style.zoom)||1;
+   cm.style.cssText='position:absolute;z-index:60;width:250px;max-height:420px;overflow:auto;background:#fff;border:1px solid #e6eaf1;border-radius:12px;box-shadow:0 14px 40px rgba(31,42,68,.2);padding:8px;font:500 12.5px Poppins,sans-serif;color:#1f2a44';
+   cm.style.left=((rc.right+scrollX)/z-250)+'px';cm.style.top=((rc.bottom+scrollY)/z+6)+'px';
+   [].forEach.call(tb.rows[0].cells,function(th,i){var l=document.createElement('label');l.style.cssText='display:flex;gap:8px;align-items:center;padding:6px 8px;border-radius:6px;cursor:pointer';var cb=document.createElement('input');cb.type='checkbox';cb.checked=!th.classList.contains('hc');
+     cb.onchange=function(){[].forEach.call(tb.querySelectorAll('[data-col="'+i+'"]'),function(c){c.classList.toggle('hc',!cb.checked)});var n=[].filter.call(tb.rows[0].cells,function(c){return !c.classList.contains('hc')}).length;el.textContent='⚙ Columns · '+n+' of '+tb.rows[0].cells.length};
+     l.appendChild(cb);l.appendChild(document.createTextNode(th.textContent.replace('fx','').trim()));cm.appendChild(l)});
+   cm.onclick=function(ev){ev.stopPropagation()};document.body.appendChild(cm);return}
+  if(/^↻ Refresh|Refresh$/.test(x))return toast('Table reloaded');
   if(/Create ▾/.test(x))return $('menu').style.display==='block'?close():open('menu',0);
   if(/New loan/.test(x))return open('d-loan',1);
   if(/Record a payment/.test(x))return open('d-pay',1);
@@ -336,7 +353,7 @@ if(h4){var card=h4.parentNode,trs=[].filter.call(card.children,function(n){retur
  function mark(){prod.forEach(function(c){c.style.outline=T(c).indexOf(sel.p)===0?'2px solid #12b48c':'none';c.style.outlineOffset='1px'});stat.forEach(function(c){c.style.outline=T(c).indexOf(sel.s)===0?'2px solid #12b48c':'none';c.style.outlineOffset='1px'})}
  function run(){var shown=0;trs.forEach(function(r){if(r.classList.contains('tnone'))return;var isTask=!!r.querySelector('.chip');if(!isTask)return;var ok=(sel.p==='All'||T(r).indexOf(sel.p)>-1)&&sel.s!=='Overdue';r.style.display=ok?'grid':'none';if(ok)shown++});
   var e=card.querySelector('.tnone');if(trs.some(function(r){return r.querySelector&&r.querySelector('.chip')})){if(!e){e=document.createElement('div');e.className='tnone';e.style.cssText='text-align:center;padding:22px;color:#98a2b6;font-size:13px';card.appendChild(e)}e.textContent=sel.s==='Overdue'?'No overdue tasks.':'No tasks for this product.';e.style.display=shown?'none':'block'}mark()}
- chips.forEach(function(c){c.style.cursor='pointer';c.addEventListener('click',function(ev){ev.stopPropagation();var x=T(c).replace(/\s*[·\d]+$/,'').replace(/\s+\d+$/,'').trim();if(prod.indexOf(c)>-1)sel.p=x;else sel.s=x;
+ chips.forEach(function(c){c.style.cursor='pointer';c.addEventListener('click',function(ev){ev.stopPropagation();var x=T(c).split(' ·')[0].replace(/\s+\d+$/,'').trim();if(prod.indexOf(c)>-1)sel.p=x;else sel.s=x;
    if(!trs.some(function(r){return r.querySelector&&r.querySelector('.chip')})&&!/no-tasks/.test(location.pathname)){location.href='company-tasks-open.html#'+encodeURIComponent(sel.p+'|'+sel.s);return}run()})});
  if(location.hash.length>1){var a=decodeURIComponent(location.hash.slice(1)).split('|');if(a[1]){sel.p=a[0];sel.s=a[1]}}run();
 }
