@@ -353,6 +353,7 @@ function cellsOf(tr){var c=[].map.call(tr.children,T);var m=META[c[0]];if(m)c=c.
 function has(c,re){return c.some(function(x){return re.test(x)})}
 function pass(tok,c,all){
  if(NOOP.test(tok)||SAMPLE.test(tok))return true;
+ if(/^(Funding #\d|FP&A|Past products)$/.test(tok)&&has(c,/^All products$/))return true; // company-wide documents belong to every product
  if(tok==='Past products')return has(c,/^(Funding #[12]|Bookkeeping.*)$/);
  if(tok==='In progress')return has(c,/^in_progress$/);
  if(tok==='Repaid')return has(c,/^repaid$/i);
