@@ -355,6 +355,7 @@ function pass(tok,c,all){
  if(tok==='Accounting'&&all.some(function(r){return r.indexOf('All products')>-1}))return has(c,/^(Accounting|Bookkeeping.*|All products)$/); // documents: Accounting is a product filter, not the transactions source filter
  if(NOOP.test(tok)||SAMPLE.test(tok))return true;
  if(/^(Funding #\d|FP&A|Fractional|Past products)$/.test(tok)&&has(c,/^All products$/))return true; // company-wide documents belong to every product
+ if(tok==='Lending')return has(c,/^Funding #\d+$/);
  if(tok==='Fractional')return has(c,/^(FP&A|Accounting|Bookkeeping.*)$/); // both Fractional CFO business units
  if(tok==='Past products')return has(c,/^(Funding #[12]|Bookkeeping.*|Accounting)$/);
  if(tok==='In progress')return has(c,/^in_progress$/);
